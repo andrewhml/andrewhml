@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="container"
+    <h1>Hello {{session['username']}}</h1>
+    {% if 'username' in session %}
+        <p>Welcome to the automagic StyleTile creator!</p>
+        <form action="{{url_for('login')}}" method="post">
+            <input type="submit" name="logout" value="logout" />
+        </form>
+    {% else %}
+            <p>A login is required:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <form action="{{url_for('login')}}" method="post">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+                            <input type="text" class="form-control" name="username" placeholder="Username">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" name="passwd" placeholder="Password">
+                        </div>
+                        <br>
+                        <button type="submit" value="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+    {% endif %}
+    </div>
+{% endblock %}
