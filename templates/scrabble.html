@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block body %}
+	<div class="container">
+	    <h2>Scrabble Cheat Machine</h2>
+	    Enter your letters, min, max
+	    <form class="form-inline" role="form" action="{{url_for('scrabble')}}" method="post">
+	    	<div class="form-group">
+	    		<label class="sr-only" for="letters">Your letters</label>
+		        <input type="text" class="form-control" id="letters" placeholder="Enter letters" name="letters" />
+		    </div>
+		   	<div class="form-group">
+	    		<label class="sr-only" for="minletters"># to use</label>
+		        <input type="number" class="form-control" id="minletters" placeholder="# to use" name="minletters" />
+		    </div>
+		   	<div class="form-group">
+	    		<label class="sr-only" for="maxletters">Word length</label>
+		        <input type="number" class="form-control" id="maxletters" placeholder="Word length" name="maxletters" />
+		    </div>
+		    <button type="submit" class="btn btn-default" value="Execute">Submit</button>
+	    </form>
+	    <br />
+	    {% with messages = get_flashed_messages(with_categories=true) %}
+  			{% if messages %}
+    		<div class="panel panel-success">
+    			<div class="panel-heading">
+    				<h3 class="panel-title">Your scrabble answers!</h3>
+    			</div>
+    			<div class="panel-body">
+	    			{% for category, message in messages %}
+	    				<div class="{{category}}">
+	      					<p>{{ message }}</p>
+	      				</div>
+	    			{% endfor %}
+    				</div>
+    			</div>
+    		</div>
+  			{% endif %}
+		{% endwith %}
+	</div>
+{% endblock %}

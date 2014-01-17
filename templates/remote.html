@@ -1,9 +1,28 @@
 {% extends "base.html" %}
 {% block body %}
-    <h2>Remote Control</h2>
-    Enter Python to execute:
-    <form action="{{url_for('remote')}}" method="post">
-        <input type="text" name="expression" />
-        <input type="submit" value="Execute" />
-    </form>
+	<div class="container">
+	    <h2>Python Remote Control</h2>
+	    <form role="form" action="{{url_for('remote')}}" method="post">
+	    	<div class="form-group">
+	    		<label for="expression">Enter python code and hit submit to execute.</label>
+	    		<input type="text" class="form-control" id="expression" name="expression" placeholder=" Code here" />
+	    	</div>
+	    	<button type="submit" value="Execute" class="btn btn-default">Submit</button>
+	    </form>
+	   	<br />
+	    {% with messages = get_flashed_messages() %}
+  			{% if messages %}
+    		<div class="panel panel-success">
+    			<div class="panel-heading">
+    				<h3 class="panel-title">Magically delicious!</h3>
+    			</div>
+    			<div class="panel-body">
+    				{% for message in messages %}
+      				<p>{{ message }}</p>
+    				{% endfor %}
+    			</div>
+    		</div>
+  			{% endif %}
+		{% endwith %}
+	</div>
 {% endblock %}

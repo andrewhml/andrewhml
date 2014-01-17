@@ -8,6 +8,7 @@ from main import Main
 from login import Login
 from remote import Remote
 from music import Music
+from scrabble import Scrabble
 
 app = flask.Flask(__name__)
 app.secret_key = settings.secret_key
@@ -28,6 +29,9 @@ app.add_url_rule('/remote/',
 app.add_url_rule('/music/',
                  view_func=Music.as_view('music'),
                  methods=['GET'])
+app.add_url_rule('/scrabble/',
+                 view_func=Scrabble.as_view('scrabble'),
+                 methods=['GET', 'POST'])
 
 @app.errorhandler(404)
 def page_not_found(error):

@@ -1,45 +1,314 @@
-/* Sticky footer styles
--------------------------------------------------- */
 
-html,
-body {
+::-moz-selection { background: #33cccc; color: #fff; text-shadow: none; }
+::selection { background: #33cccc; color: #fff; text-shadow: none; }
+
+.header-bg {
+  width: 100%;
   height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: #292929 url(/static/img/AHML_bg.jpg) 50% 0 repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size: cover;
+  min-height: 760px;
 }
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+.sticky {
+  background-color: #01b2c6;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  transition: background .2s linear;
 }
 
-/* Set the fixed height of the footer here */
-#footer {
-  height: 60px;
-  background-color: #f5f5f5;
+/* PARALLAX STUFF
+================================================== */
+#paralaxSlice1, #paralaxSlice2, #paralaxSlice4, #paralaxSlice5, #paralaxSlice6, #paralaxSlice7, #paralaxSlice8, #paralaxSlice9, #paralaxSlice10, #paralaxSlice11, #paralaxSlice12, #homeFullScreen {
+  width:100%;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size: cover;
+  background-position: top center;
 }
 
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
-#wrap > .container {
-  padding: 60px 15px 0;
+.maskParent{position: relative; height:100%;width:100%}
+.paralaxText {
+  padding-top:66px;
+  padding-bottom:66px;
+  text-align:center;
+  position: relative;
+
 }
-.container .credit {
-  margin: 20px 0;
+.paralaxMask {width:100%; height:100%;overflow:hidden;position:absolute;background:rgba(0,0,0,0.15);}
+
+/*** MEDIA QUERIES ***/
+
+@media(max-width:767px){}
+
+@media(min-width:768px){}
+
+@media(min-width:992px){}
+
+@media(min-width:1200px){
+
+  #paralaxSlice1, #paralaxSlice2, #paralaxSlice3, #paralaxSlice4, #paralaxSlice5, #homeFullScreen {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
 }
 
-#footer > .container {
-  padding-left: 15px;
-  padding-right: 15px;
+
+/* END MAIN MENU
+================================================== */
+/* HOME
+================================================== */
+body#fullScreen {padding-top: 0}
+body#fullScreen #mainHeader{display:none;}
+#home{padding-top:44px;}
+#mapWrapper{ height:350px; }
+
+#homeFullScreen {
+  background-image: url('/static/img/AHML_bg.jpg');
+  /*background-image: url('../images/theme-pics/paralax-1.jpg');*/
+  height:100%;
+  display:table;
 }
 
-code {
-  font-size: 80%;
+#homeFullScreen .maskParent {display:table;}
+
+#fullScreenSliderWrapper{
+  display:table-cell;
+  vertical-align: middle;
+  width:100%;
+  text-align:center;
+  margin:auto;
 }
+.btn.homeBtn {position:relative; background:rgba(255,255,255,0.25);}
+
+#logoBig img{width:300px; margin:auto; position: relative}
+#homeFullScreen #flexHome {margin: 0;}
+#homeFullScreen #flexHome h1, #homeFullScreen #flexHome .flex-control-nav{text-align: center; margin-bottom: 44px;}
+#homeFullScreen .flexslider .slides > li{height:80px;}
+
+
+/* Equalizer - original code by http://aniketpant.com/2011/06/pure-css-soundbars/ */
+
+@-moz-keyframes stop {
+  0% {
+    height: 20px; }
+
+  100% {
+    height: 4px; } }
+
+@-moz-keyframes hover {
+  0% {
+    height: 5px; }
+
+  100% {
+    height: 20px; } }
+
+@-moz-keyframes move1 {
+  0% {
+    height: 5px; }
+
+  25% {
+    height: 20px; }
+
+  75% {
+    height: 15px; }
+
+  100% {
+    height: 5px; } }
+
+@-moz-keyframes move2 {
+  0% {
+    height: 2px; }
+
+  25% {
+    height: 12px; }
+
+  75% {
+    height: 20px; }
+
+  100% {
+    height: 2px; } }
+
+@-moz-keyframes move3 {
+  0% {
+    height: 7px; }
+
+  25% {
+    height: 2px; }
+
+  75% {
+    height: 20px; }
+
+  100% {
+    height: 7px; } }
+
+@-moz-keyframes move4 {
+  0% {
+    height: 12px; }
+
+  25% {
+    height: 5px; }
+
+  75% {
+    height: 22px; }
+
+  100% {
+    height: 12px; } }
+
+@-webkit-keyframes stop {
+  0% {
+    height: 20px; }
+
+  100% {
+    height: 4px; } }
+
+@-webkit-keyframes hover {
+  0% {
+    height: 5px; }
+
+  100% {
+    height: 20px; } }
+
+@-webkit-keyframes move1 {
+  0% {
+    height: 5px; }
+
+  25% {
+    height: 20px; }
+
+  75% {
+    height: 15px; }
+
+  100% {
+    height: 5px; } }
+
+@-webkit-keyframes move2 {
+  0% {
+    height: 2px; }
+
+  25% {
+    height: 12px; }
+
+  75% {
+    height: 20px; }
+
+  100% {
+    height: 2px; } }
+
+@-webkit-keyframes move3 {
+  0% {
+    height: 7px; }
+
+  25% {
+    height: 2px; }
+
+  75% {
+    height: 20px; }
+
+  100% {
+    height: 7px; } }
+
+@-webkit-keyframes move4 {
+  0% {
+    height: 12px; }
+
+  25% {
+    height: 5px; }
+
+  75% {
+    height: 22px; }
+
+  100% {
+    height: 12px; } }
+
+.music-toggle {
+  display: none;
+  /* showing up is controlled via jQuery */
+  cursor: pointer;
+  float: right; }
+
+.bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 19px;
+  height: 20px;
+  /* true is 22 */
+  position: relative;
+  display: inline-block;
+}
+
+
+.bars li {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  float: left;
+  width: 4px;
+  background-color: #ffffff;
+  -webkit-border-radius: 1px 1px 0px 0px;
+  -moz-border-radius: 1px 1px 0px 0px;
+  border-radius: 1px 1px 0px 0px;
+  -webkit-transition: height 0.4s linear;
+  -moz-transition: height 0.4s linear;
+  -o-transition: height 0.4s linear;
+  transition: height 0.4s linear;
+  margin: 0;
+}
+
+.bars:first-child {
+  margin-left: 0; }
+
+.bars:last-child {
+  margin-right: 0; }
+
+.bar1 {
+  left: 0px;
+  height: 16px;
+  -moz-animation: move1 infinite 2s linear;
+  -webkit-animation: move1 infinite 2s linear; }
+
+.bar2 {
+  left: 5px;
+  height: 12px;
+  -moz-animation: move2 infinite 4s linear;
+  -webkit-animation: move2 infinite 4s linear; }
+
+.bar3 {
+  left: 10px;
+  height: 18px;
+  -moz-animation: move3 infinite 2s linear;
+  -webkit-animation: move3 infinite 2s linear; }
+
+.bar4 {
+  left: 15px;
+  height: 9px;
+  -moz-animation: move4 infinite 0.8s linear;
+  -webkit-animation: move4 infinite 0.8s linear; }
+
+.hidden {
+  height: 300px;
+  box-shadow: none !important; }
+
+.music-toggle.music-stopped .bars li {
+  height: 4px;
+  -moz-animation: stop 0.8s linear;
+  -webkit-animation: stop 0.8s linear; }
+
+#mobile-logo {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding: 200px 0; }
