@@ -1,107 +1,178 @@
 {% extends "base.html" %}
 
 {% block body %}
-	<section id="homeFullScreen" data-stellar-background-ratio="0.5" style="height: 494px; background-position: 50% 0px;">
-		<div class="maskParent">
-			<div class="paralaxMask"></div>
-			<div id="fullScreenSliderWrapper">
+	<section id="homeFullScreen" data-stellar-background-ratio="0.5">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 landing">
+						<h1>marketing</h1>
+            <h1>brand &amp; design</h1>
+            <p>Boston based consultant specializing in marketing, branding, and design,
+            <br/> for startups, small businesses and new initiatives.</p>
+            <a class="btn btn-default scroll" data-easing="linear" data-url="true" href="#about">learn more</a>
+          </div>
+        </div>
+      </div>
+	</section>
 
-				<div class="flexslider" id="flexHome">
-					
-				<div class="flex-viewport" style="overflow: hidden; position: relative; height: 100px;"><ul class="slides" style="height: 1000%; position: absolute; width: 100%; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(0, -300px, 0);"><li class="clone" style="display: block;">
-							<h1>Mobile first design</h1>
-						</li>
-						<li style="display: block;" class="">
-							<h1>Hello, this is Ashley</h1>							
-						</li>
-						<li style="display: block;" class="">
-							<h1>Modern and Creative</h1>
-						</li>
-						<li style="display: block;" class="flex-active-slide">
-							<h1>Mobile first design</h1>
-						</li>
-					<li style="display: block;" class="clone">
-							<h1>Hello, this is Ashley</h1>							
-						</li></ul></div><ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="flex-active">3</a></li></ol></div> 
-				<a href="http://ashley-bootstrap3-website-template.little-neko.com/main/files/index-fullscreen.html#about" id="learnmore" class="homeBtn btn"><i class="icon-down"></i>learn more</a>
+
+  <section id="about" class="slice color1">
+	 <div class="container">
+		 <h2>I'm a problem solver, design think, and growth marketer. <br>I use thoughtful design, and clear concise messagin to communicate value.</h2>
+	 </div>
+	</section>
+
+	<section id="services" class="slice">
+    <div class="container">
+    	<h1 class="slice-title">What I do</h1>
+      <div class="row">
+        <div class="col-md-4">
+        	<div class="service">
+		      <i class="fa fa-fire fa-6x" style="vertical-align:middle;"></i>
+		      <h2>Branding &amp; Identity</h2>
+		    	</div>
+			    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			  </div>
+      <div class="col-md-4">
+        	<div class="service">
+		      <i class="fa fa-tablet fa-6x" style="vertical-align:middle;"></i>
+		      <h2>Web design &amp; UI</h2>
+		    	</div>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+       </div>
+        <div class="col-md-4">
+        	<div class="service">
+		      <i class="fa fa-bullseye fa-6x" style="vertical-align:middle;"></i>
+		      <h2>Marketing Strategy</h2>
+		    	</div>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dichotomy">
+  	<a href="#" class="btn-circle">Creative <hr> Analytical</a>
+  </section>
+
+  <section id="tools" class="slice color2">
+  	<div class="container">
+  		<h1 class="slice-title2">Tools</h1>
+  		<p class="slice-subtitle2">I tackle projects with a diverse toolkit</p>
+    	<div class="row">
+    		<div class="col-md-2 tool">
+    			<i class="fa fa-keyboard-o fa-3x"></i>
+    			<p class="tool-text">python</p>
+    		</div>
+    		<div class="col-md-2 tool">
+    			<i class="fa fa-laptop fa-3x"></i>
+    			<p class="tool-text">balsamiq</p>
+    		</div>
+    		<div class="col-md-2 tool">
+    			<i class="fa fa-html5 fa-3x"></i>
+    			<p class="tool-text">html</p>
+    		</div>
+    		<div class="col-md-2 tool">
+    			<i class="fa fa-css3 fa-3x"></i>
+    			<p class="tool-text">css</p>
+    		</div>
+    		<div class="col-md-2 tool">
+    			<i class="fa fa-picture-o fa-3x"></i>
+    			<p class="tool-text">photoshop</p>
+    		</div>
+    		<div class="col-md-2 tool">
+    			<i class="fa fa-pencil fa-3x"></i>
+    			<p class="tool-text">illustrator</p>
+    		</div>
+    	</div>
+    </div>
+  </section>
+
+  <section id="work" class="slice color1">
+    <div class="container">
+    	<h1 class="slice-title">What I do</h1>
+      <div class="row">
+			  <div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img src="/static/img/img-thumb.png" alt="...">
+			      <div class="caption">
+			        <h3>IMG Academy</h3>
+			        <p>...</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img src="/static/img/socialfulcrum-thumb.png" alt="...">
+			      <div class="caption">
+			        <h3>Social Fulcrum</h3>
+			        <p>...</p>
+			      </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img src="/static/img/receptionit-thumb.png" alt="...">
+			      <div class="caption">
+			        <h3>ReceptionIt</h3>
+			        <p>...</p>
+			      </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img src="/static/img/beknown-thumb.png" alt="...">
+			      <div class="caption">
+			        <h3>Monster Worldwide</h3>
+			        <p>...</p>
+			      </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img src="/static/img/easyceipt-thumb.png" alt="...">
+			      <div class="caption">
+			        <h3>SinoGael</h3>
+			        <p>...</p>
+			      </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img src="/static/img/swifton-thumb.png" alt="...">
+			      <div class="caption">
+			        <h3>Swifton CFOs</h3>
+			        <p>...</p>
+			      </div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-	 <div id="about" class="container">
-		 <h1>Hello, world!</h1>
-		 <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-		 <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
-	 </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-        </div>
-      </div>
-
+	<section id="contact" class="slice color2">
   	<div class="container">
-	  <!-- Example row of columns -->
-	  <div class="row">
-	    <div class="col-md-4">
-	      <h2>Heading</h2>
-	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	      <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-	    </div>
-	    <div class="col-md-4">
-	      <h2>Heading</h2>
-	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	      <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-	   </div>
-	    <div class="col-md-4">
-	      <h2>Heading</h2>
-	      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	      <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-	    </div>
+  		<h1 class="slice-title">Contact</h1>
+    	<div class="row">
+    		<div class="col-md-5 col-md-offset-1">
+    			<input class="form-control input-lg" type="text" placeholder="name">
+    		</div>
+    		<div class="col-md-5">
+    			<input class="form-control input-lg" type="text" placeholder="email">
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1">
+    			<textarea class="form-control" rows="15" placeholder="message"></textarea>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-6 col-md-offset-3">
+    			<button type="button" class="btn btn-primary btn-lg btn-block">send pigeon</button>
+    		</div>
+    	</div>
   	</div>
+  </section>
 
-  <div class="container">
-  <!-- Example row of columns -->
-  <div class="row">
-    <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-   </div>
-    <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
-    </div>
-  </div>
-
-
-    <div class="container">
-        <div class="page-header">
-          <h1>Welcome!</h1>
-        </div>
-        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
-        <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
-    </div>
 
 {% endblock %}
