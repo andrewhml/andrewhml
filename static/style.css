@@ -15,6 +15,26 @@
 ::-moz-selection { background: #01b2c6; color: #fff; text-shadow: none; }
 ::selection { background: #01b2c6; color: #fff; text-shadow: none; }
 
+
+
+.navbar-fixed-top {
+  padding-top: 50px;
+}
+
+#main-nav {
+-webkit-animation:navin 6s forwards linear;
+-moz-animation:navin 6s forwards linear;
+-o-animation:navin 6s forwards linear;
+-ms-animation:navin 6s forwards linear;
+animation:navin 6s forwards linear;
+-webkit-transition:padding .2s linear;
+-moz-transition:padding .2s linear;
+-o-transition:padding .2s linear;
+-ms-transition:padding .2s linear;
+transition:padding .2s linear;
+
+}
+
 .navbar-brand {
   padding-right: 0;
   padding-left: 0;
@@ -32,10 +52,10 @@
 
 .nav>li>a {
   position: relative;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: lighter;
   display: block;
-  margin-right: 4em;
+  margin-right: 80px;
   margin-top: 45px;
   color: #fff;
   text-decoration: none;
@@ -55,7 +75,9 @@ text-decoration: none;
 }
 
 .sticky {
+  top: 0;
   background-color: #01b2c6;
+  padding-top: 0;
   -webkit-transition: background .2s linear;
   -moz-transition: background .2s linear;
   -o-transition: background .2s linear;
@@ -70,14 +92,9 @@ text-decoration: none;
   }
 
 
-.music {
-  padding-top: 42px;
-}
-
-
 .btn {
   border-radius: 2px;
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-style: none;
   font-size: 1.6em;
 }
@@ -168,15 +185,6 @@ font-weight: 300;
 
 /* HOME
 ================================================== */
-/*** MEDIA QUERIES ***/
-
-@media(max-width:767px){}
-
-@media(min-width:768px){}
-
-@media(min-width:992px){}
-
-@media(min-width:1200px){
 
 
 #homeFullScreen {
